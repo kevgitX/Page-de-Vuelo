@@ -151,3 +151,24 @@ body {
 .footer-end{
     background:red;
 }
+
+.img-colum{
+  display: flex;
+  justify-content: center;
+  
+}
+.cont-in{
+  display: flex;
+  justify-content: center;
+}
+.perfiles{
+  border-radius: 100px;
+}
+
+
+/* @media (min-width: 576px){
+.perfiles {
+    width: 117px;
+    height: 117px
+}
+} */

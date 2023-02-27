@@ -1,21 +1,186 @@
+// setTimeout(()=>{
+//   window.location.reload()
+// },4000)
+
+// VARIABLE
+const boton = document.querySelector('#boton');
+const foto = document.querySelector('#foto')
+const Nombre = document.querySelector('#nombre');
+const Correo = document.querySelector('#correo');
+const Telefono = document.querySelector('#telefono');
+const Localidad = document.querySelector('#localidad');
+// ---------------------
 
 
+// Usuario1
+const generarUsuario = async() =>{
+  try {
+  const url =('https://randomuser.me/api/');
+  const respuesta = await fetch(url)
+  const {results} = await respuesta.json();
+  const datos = results[0];
+  console.log(datos);
+  foto.src = datos.picture.large
+  Nombre.textContent = datos.name.first
+  Correo.textContent = datos.email
+  Telefono.textContent = datos.phone
+  Localidad.textContent = datos.location.city
+
+  } catch (error) {
+    console.log(error);
+  }
+
+}
+
+document.addEventListener('DOMContentLoaded', generarUsuario )
+// '---------------------------'
+
+const foto2 = document.querySelector('#foto2')
+const nombre2 = document.querySelector('#nombre2');
+const correo2 = document.querySelector('#correo2');
+const telefono2 = document.querySelector('#telefono2');
+const localidad2 = document.querySelector('#localidad2');
+
+const segundousuario = async() =>{
+  try {
+  const url =('https://randomuser.me/api/');
+  const respuesta = await fetch(url)
+  const {results} = await respuesta.json();
+  const datos = results[0];
+  console.log(datos);
+  foto2.src = datos.picture.large
+  nombre2.textContent = datos.name.first
+  correo2.textContent = datos.email
+  telefono2.textContent = datos.phone
+  localidad2.textContent = datos.location.city
+
+  } catch (error) {
+    console.log(error);
+  }
+
+}
+
+document.addEventListener('DOMContentLoaded', segundousuario )
 
 
+// '---------------------------'
 
 
+const foto3 = document.querySelector('#foto3')
+const nombre3 = document.querySelector('#nombre3');
+const correo3 = document.querySelector('#correo3');
+const telefono3 = document.querySelector('#telefono3');
+const localidad3 = document.querySelector('#localidad3');
+
+const tercerusuario = async() =>{
+  try {
+  const url =('https://randomuser.me/api/');
+  const respuesta = await fetch(url)
+  const {results} = await respuesta.json();
+  const datos = results[0];
+  console.log(datos);
+  foto3.src = datos.picture.large
+  nombre3.textContent = datos.name.first
+  correo3.textContent = datos.email
+  telefono3.textContent = datos.phone
+  localidad3.textContent = datos.location.city
+
+  } catch (error) {
+    console.log(error);
+  }
+
+}
+
+document.addEventListener('DOMContentLoaded', tercerusuario )
 
 
+// '-------------------'
 
+const foto4 = document.querySelector('#foto4')
+const nombre4 = document.querySelector('#nombre4');
+const correo4 = document.querySelector('#correo4');
+const telefono4 = document.querySelector('#telefono4');
+const localidad4 = document.querySelector('#localidad4');
 
+const cuartousuario = async() =>{
+  try {
+  const url =('https://randomuser.me/api/');
+  const respuesta = await fetch(url)
+  const {results} = await respuesta.json();
+  const datos = results[0];
+  console.log(datos);
+  foto4.src = datos.picture.large
+  nombre4.textContent = datos.name.first
+  correo4.textContent = datos.email
+  telefono4.textContent = datos.phone
+  localidad4.textContent = datos.location.city
 
+  } catch (error) {
+    console.log(error);
+  }
 
+}
 
+document.addEventListener('DOMContentLoaded', cuartousuario )
 
+// ---------------------
 
+const foto5 = document.querySelector('#foto5')
+const nombre5 = document.querySelector('#nombre5');
+const correo5 = document.querySelector('#correo5');
+const telefono5 = document.querySelector('#telefono5');
+const localidad5 = document.querySelector('#localidad5');
 
+const quintousuario = async() =>{
+  try {
+  const url =('https://randomuser.me/api/');
+  const respuesta = await fetch(url)
+  const {results} = await respuesta.json();
+  const datos = results[0];
+  console.log(datos);
+  foto5.src = datos.picture.large
+  nombre5.textContent = datos.name.first
+  correo5.textContent = datos.email
+  telefono5.textContent = datos.phone
+  localidad5.textContent = datos.location.city
 
+  } catch (error) {
+    console.log(error);
+  }
 
+}
+
+document.addEventListener('DOMContentLoaded', quintousuario )
+// ------------
+
+const foto6 = document.querySelector('#foto6')
+const nombre6 = document.querySelector('#nombre6');
+const correo6 = document.querySelector('#correo6');
+const telefono6 = document.querySelector('#telefono6');
+const localidad6 = document.querySelector('#localidad6');
+
+const sextousuario = async() =>{
+  try {
+  const url =('https://randomuser.me/api/?nat=ES');
+  const respuesta = await fetch(url)
+  const {results} = await respuesta.json();
+  const datos = results[0];
+  console.log(datos);
+  foto6.src = datos.picture.large
+  nombre6.textContent = datos.name.first
+  correo6.textContent = datos.email
+  telefono6.textContent = datos.phone
+  localidad6.textContent = datos.location.city
+
+  } catch (error) {
+    console.log(error);
+  }
+
+}
+
+document.addEventListener('DOMContentLoaded', sextousuario )
+
+// --------------
 
 
 class Carousel {
