@@ -44,6 +44,8 @@ body {
   }
   #carousel-content {
       height:100%;
+      /* CAMBIOS */
+      background: yellow;
   }
   #carousel-dots {
       position: absolute;
@@ -165,10 +167,34 @@ body {
   border-radius: 100px;
 }
 
-
-/* @media (min-width: 576px){
-.perfiles {
-    width: 117px;
-    height: 117px
+/* COLUMNA DERECHA */
+.column-right{
+  padding: 0%!important;
 }
+
+/* ---------------------MAIN IZQUIERDO */
+/* .columnaiz{
+  padding: 0%!important;
+   margin:0%!important;
+}
+.col-t{
+  background: maroon;
+  padding: 0%!important;
+  margin: 0%!important;
+}
+.col-in{
+  padding: 0%!important;
+  margin: 0%!important;
+}
+.tituloiz{
+  border:10px;
+  margin: 0%;
+  padding: 0%!important;
+  background: white;
+  
 } */
+
+.col-in{
+  background: maroon;
+  border-radius: 10px;
+}
