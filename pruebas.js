@@ -1,3 +1,23 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class Carousel {
     constructor (container, autoplay, playspeed, dots) {
       this.container = container

@@ -55,6 +55,8 @@ body {
       /* CAMBIO */
       justify-content:center;
       align-items:center;
+      /* CAMBIO,AGREGADO POSITION */
+      position: static;
   }
   
   .card {
@@ -108,6 +110,8 @@ body {
     border-radius:50%;
     margin:0 0.5rem;
     cursor:pointer;
+    /* CAMBIO. AGREGADO MARGIN */
+    margin-bottom:23px;
   }
   
   .active-dot {
