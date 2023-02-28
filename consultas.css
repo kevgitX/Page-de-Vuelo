@@ -151,7 +151,8 @@ body {
 
 
 .footer-end{
-    background:red;
+    background-color: black;
+    color: white;
 }
 
 .img-colum{
@@ -219,8 +220,9 @@ body {
   height: 63px;
   /* CAMBIOS */
   display: flex;
-    flex-direction: column;
-    align-content: space-around;
+  flex-direction: column;
+  align-content: space-around;
+  font-weight: normal;
 }
 .input-form{
   /* CAMBIOS */
@@ -239,6 +241,7 @@ body {
 } */
 .consulta-en{
   margin-top: 2px!important;
+  font-weight: normal;
 }
 
 .main-iz{
@@ -246,7 +249,7 @@ body {
   
 }
 .columnaiz{
-  background:rgb(83, 8, 8);
+  /* background:rgb(83, 8, 8); */
   border-radius: 20px;
   /* CAMBIO */
   align-items: center;
@@ -254,9 +257,32 @@ body {
   
 }
 *{
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Fira Sans', sans-serif!important;
 }
 #carousel-content{
   font-size: 16px;
   border-radius: 20px;
+}
+
+/* FOOTER */
+
+.li-footer{
+  list-style:none; cursor: pointer;
+}
+
+.footer-end{
+  background: radial-gradient(black, transparent);
+
+}
+.col-t{
+  background: white;
+}
+.main{
+  border-radius: 23px;
+}
+.col-t{
+  border-radius: 22px;
+}
+.col-sm-6{
+  width: 100%!important;
 }

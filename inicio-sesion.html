@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio-sesion.CSS">
+    <link rel="stylesheet" href="inicio-sesion.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Login</title>
+</head>
+<body>
+ <div class="menu">
+    <h2 class="form_titulo">Inicia Sesión</h2>
+    <p class="form_parrafo">¿Aún no tienes una Cuenta? <a href="log-in.html" target="_blank" class="form_link">Entra Aquí</a></p>
+    <p class="form_parrafo">¿Olvidaste tu contraseña? <a href="a" class="form_link">Recuperar Contraseña</a></p>
+
+    <div action=""class="form_contenedor form_group" id="form_contenedor">
+        <!-- Usuario -->
+        <div class="form_grupo" id="group_usuario">
+            <i class="formulario_validacion-estado fa-solid fa-circle-xmark"></i>
+            <input type="text" id="usuario" name="usuario" class="form_input" placeholder=" ">
+            <label for="usuario" class="form_label">Usuario:</label>
+            <span class="form_line"></span>
+        </div>
+        <div class="form_grupo" id="group_usuario">
+            <p class="formulario_input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener, letras y guion bajo.</p>
+            </div>
+
+        <!-- Contraseña -->
+        <div class="form_grupo" id="group_contraseña">
+            <i class="formulario_validacion-estado fa-solid fa-circle-xmark"></i>
+            <input type="password" id="contraseña" name="password" class="form_input" placeholder=" ">
+            <label for="password" class="form_label">Contraseña:</label>
+            <span class="form_line"></span>
+        </div>
+        <div class="form_grupo" id="group_contraseña">
+            <p class="formulario_input-error">La contraseña tiene que ser 4 a 12.</p>
+            </div>
+        
+        <!-- Enviar -->
+        <div class="form_grupo form_grupo_btn_enviar">
+            <button type="submit" class="formulario_btn">Enviar</button>
+            <p class="form_mensaje-exito" id="form_mensaje-exito">!Has Iniciado Sesion!</p>
+        </div>
+        <!-- Rellene -->
+        <div class="formulario_mensaje" id="formulario_mensaje">
+            <p><i class="fa-solid fa-triangle-exclamation"></i><b>Error</b> Por Favor, Rellene todos los Campos.</p>
+        </div>
+    </div>
+ </div>
+    <script src="inicio-sesion.js"></script>
+</body>
+</html>

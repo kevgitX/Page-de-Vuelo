@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="log-in.js">
+  <link rel="stylesheet" href="log-in.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+  <title>Registrate</title>
+
+</head>
+<body>
+    <div class="menu">
+        <h2 class="form_titulo">Crear Cuenta</h2>
+        <p class="form_parrafo">¿Ya Tienes una Cuenta?<a href="inicio-sesion.html" target="_blank" class="form_linka">Inicia Sesión</a></p>
+        <div class="form_contenedor form_group" id="form_contenedor">
+            <!--input name-->
+            <div class="form_grupo" id="group_name">
+                <i class="formulario_validacion-estado fa-solid fa-circle-xmark"></i>
+                <input type="text" id="name" name="nombre" class="form_input" placeholder=" ">
+                <label for="name" class="form_label">Nombre y Apellido: </label>
+                <span class="form_line"></span>
+                
+                </div>
+                <div class="form_grupo" id="group_name">
+                <p class="formulario_input-error">4 a 16 dígitios  y solo puede contener numeros, letras y guion bajo.</p>
+                </div>
+            <!--fin-->
+
+            <!--input email-->
+            
+            <div class="form_grupo" id="group_email">
+                <i class="formulario_validacion-estado fa-solid fa-circle-xmark"></i>
+                <input type="email" id="email" name="correo" class="form_input" placeholder=" ">
+                <label for="email" class="form_label">Email:</label>
+                <span class="form_line"></span>   
+            </div>
+            <div class="form_grupo" id="group_email">
+            <p class="formulario_input-error">No es un Correo electronico valido.</p>
+            </div>
+
+
+            <!--fin -->
+
+            <div class="form_grupo" id="group_usuario">
+                <i class="formulario_validacion-estado fa-solid fa-circle-xmark"></i>
+                <input type="text" id="usuario" name="usuario" class="form_input" placeholder=" " >
+                <label for="usuario" class="form_label">Usuario:</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_grupo" id="group_usuario">
+            <p class="formulario_input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener, letras y guion bajo.</p>
+            </div>
+            <div class="form_grupo" id="group_contraseña">
+                <i class="formulario_validacion-estado fa-solid fa-circle-xmark"></i>
+                <input type="password" id="contraseña" name="password" class="form_input" placeholder=" ">
+                <label for="password" class="form_label">Contraseña:</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_grupo" id="group_contraseña">
+            <p class="formulario_input-error">La contraseña tiene que ser 4 a 12.</p>
+            </div>
+            <div class="form_grupo" id="group_contraseña2">
+                <i class="formulario_validacion-estado fa-solid fa-circle-xmark"></i>
+                <input type="password" id="contraseña2" name="password2" class="form_input" placeholder=" ">
+                <label for="password2" class="form_label">Confirmar Contraseña:</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_grupo" id="group_contraseña2">
+            <p class="formulario_input-error">Ambas contraseñas deben ser iguales.</p>
+            </div>
+            <!--Grupo: Terminos y Condiciones-->
+            <div class="form_grupo" id="grupo_terminos">
+                <label class="formulario_label">
+                <input class="formulario_checkbox form_check"type="checkbox" name="terminos" id="terminosyc">
+                Acepto los Terminos y Condiciones
+                </label>
+            </div>
+            <div class="formulario_mensaje" id="formulario_mensaje">
+                <p><i class="fa-solid fa-triangle-exclamation"></i><b>Error</b> Por Favor, Rellene todos los Campos.</p>
+            </div>
+
+            <!-- Enviar -->
+            <div class="form_grupo form_grupo-btn-enviar">
+                <a class="btn" href="">
+                    <button type="submit" class="formulario_btn">Enviar</button>
+                </a>
+                
+            </div>
+            
+            <!--<a class="btn "href="Crear-CV.html"><input type="submit"  class="form_submit" value="Siguiente"></a>
+            </div>-->
+     </div>
+    <script src="log-in.js"></script>
+</body>
+</html>

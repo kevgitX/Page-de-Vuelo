@@ -1,0 +1,210 @@
+/* Fonts:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+font-family: 'Fira Sans', sans-serif; */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    background-color: #c6c6dd;
+    /*background-image: radial-gradient(#8185c4 0.5px, #c6c6dd 0.5px);*/
+    background-image: url(im-relleno/mar.jpg);
+    background-position: center;
+    display: flex;
+    min-height: 100vh;
+}
+.menu{
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    max-height: 736px;
+    padding: 3.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 /30%);
+    text-align: center;
+    padding-top:18px;
+}
+.form_titulo{
+    font-size: 2rem;
+    margin-bottom: .5em;
+    font-weight: normal;
+
+}
+.form_parrafo{
+    font-weight: 300;
+}
+.form_link{
+    font-weight: 400;
+    color: #000;
+}
+.form_contenedor{
+    margin-top: 2em;
+    display: grid;
+    gap: 1.5em;
+    font-size: 15px;
+    grid-auto-rows:23px;
+}
+.form_grupo{
+    position: relative;
+    --color: #5757577e;
+    /* cambios */
+    width: 285px;
+}
+.form_input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    height: 100%;
+    
+}
+.form_label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: -8px;
+    left: 5px;
+    transform:translateY(10px) ;
+    transition: transform .5s, color .3s;
+}
+
+.form_input:not(:placeholder-shown){
+    color:#4d4646
+}
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale( .7);
+    transform-origin: left top;
+    color:#3863f2
+}
+.form_submit{
+    background: #3866f2;
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+    /* cambios*/
+    width:304px;
+    height:44.8px;
+    cursor: pointer;
+}
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #3863f2;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+
+.form_input:focus ~ .form_line,
+.form_input:not(:placeholder-shown) + .form_line{
+    transform: scale(1);
+
+}
+@media (max-width: 425px) {
+
+    .form_titulo{
+        font-size: 1.8rem;
+}
+}
+.form_link{
+    text-decoration:none;
+}
+
+
+.btn{
+    background: #3866f2;
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+    border: none;
+    border-radius: .5em;
+}
+.btn
+.formulario_btn{
+    background: #3866f2;
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+    width: 304px;
+    height: 44.8px;
+    cursor: pointer;
+    /* cambios */
+    width: 280px;
+}
+
+/*btn*/
+.formulario_mensaje{
+    display: none;
+}
+.formulario_mensaje-activo{
+    display: block;
+}
+.form_grupo-btn-enviar{
+    display: block;
+}
+.formulario_btn:hover{
+    box-shadow: 3px 0px 30px rgba(163, 163, 163,1);
+}
+
+.formulario_validacion-estado{
+    position: absolute;
+    
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity:0;
+    /* aqui-agregado */
+    bottom: 3px;
+    /* cambios*/
+    right: -17px;
+}
+.form_check{
+    margin-right: 10px;
+}
+
+
+
+.form_group{
+    position: relative;
+    /* aqui-agregado */
+    margin-bottom: -8px;
+}
+
+.formulario_input-error{
+    font-size:11px;
+    display: none;
+}
+.formulario_input-error-activo{
+    display: block;
+}
+/*Estilos-para-validacion*/
+.form_group-correcto .formulario_validacion-estado{
+    color:#1ed12d;
+    opacity: 1;
+}
+
+.form_group-incorrecto .formulario_validacion-estado{
+    color: red;
+    opacity: 1;
+}
+
