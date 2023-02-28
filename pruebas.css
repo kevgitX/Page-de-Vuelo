@@ -10,7 +10,7 @@ body {
   .main {
     /* width:100vw; */
     height:100vh;
-    background-color:rgb(17, 0, 76);
+    background-color:rgb(255, 255, 255);
     position:relative;
     overflow:hidden;
   }
@@ -45,7 +45,7 @@ body {
   #carousel-content {
       height:100%;
       /* CAMBIOS */
-      background: yellow;
+      background: rgb(255, 255, 255);
   }
   #carousel-dots {
       position: absolute;
@@ -196,6 +196,7 @@ body {
 .col-t{
   display: flex;
   justify-content: center;
+  
 }
 .col-in{
   border-radius: 10px;
@@ -209,21 +210,50 @@ body {
   /* height: 276px; */
 }
 .tituloiz{
-  background: yellow;
+  font-size: 23px;
+  font-weight: normal;
+  margin: 0%;
 }
 
 .tittle-form{
   height: 63px;
+  /* CAMBIOS */
+  display: flex;
+    flex-direction: column;
+    align-content: space-around;
 }
 .input-form{
-  
+  /* CAMBIOS */
+  width: 50%!important;
+  height: 52%!important;
 }
 .btn-form{
-
+  width: 15%!important;
+}
+.btn-ro{
+  display: flex;
+  justify-content: center;
 }
 /* .consul-form{
   height: 92px
 } */
 .consulta-en{
   margin-top: 2px!important;
+}
+
+.main-iz{
+  /* background: white; */
+  
+}
+.columnaiz{
+  background:rgb(83, 8, 8);
+  border-radius: 20px;
+  
+}
+*{
+  font-family: 'Fira Sans', sans-serif;
+}
+#carousel-content{
+  font-size: 16px;
+  border-radius: 20px;
 }
