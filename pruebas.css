@@ -193,8 +193,37 @@ body {
   background: white;
   
 } */
-
+.col-t{
+  display: flex;
+  justify-content: center;
+}
 .col-in{
-  background: maroon;
   border-radius: 10px;
+}
+.col-input{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.input-des{
+  /* height: 276px; */
+}
+.tituloiz{
+  background: yellow;
+}
+
+.tittle-form{
+  height: 63px;
+}
+.input-form{
+  
+}
+.btn-form{
+
+}
+/* .consul-form{
+  height: 92px
+} */
+.consulta-en{
+  margin-top: 2px!important;
 }
