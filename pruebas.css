@@ -248,6 +248,9 @@ body {
 .columnaiz{
   background:rgb(83, 8, 8);
   border-radius: 20px;
+  /* CAMBIO */
+  align-items: center;
+  display: flex;
   
 }
 *{
